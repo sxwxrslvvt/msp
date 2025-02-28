@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>smp</title>
+    <link rel="stylesheet" href="./inc/slick.css">
+    <link rel="stylesheet" href="./inc/slick-theme.css">
+    <link rel="stylesheet" href="./inc/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script defer src="./inc/jquery-1.11.0.min.js"></script>
+    <script defer src="./inc/jquery-migrate-1.2.1.min.js"></script>
+    <script defer src="./inc/slick.js"></script>
+    <script defer src="./js/index.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="top-bar" id="bar">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-xl-6 col-6">
+                        <div class="logo">
+                            <img src="./image/Logo (4).svg" alt="логотип" class="logo">
+                        </div>
+                    </div>
+                    <div class="col-xl-4 order-xl-2 order-3 col-12 location-con">
+                        <div class="location">
+                            <span> Мы находимся в городе Иваново </span>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-6 order-xl-3 text-end">
+                        <button class="btn-block header-btn">
+                            <input type="button" value="Присоединиться">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-content">
+            <div class="container-fluid">
+                <div class="row align-items-end">
+                    <div class="col-xl-7 p-0">
+                        <div class="header-content__left-part">
+                            <h1 class="title">Сообщество молодых предпринимателей
+                            </h1>
+                            <span class="sub-title">...и тех, кто хочет ими стать</span>
+                        </div>
+                    </div>
+                    <div class="col-xl-5">
+                        <div class="header-content__right-part">
+                            <div class="img-block">
+                                    <img src="./image/people1.png" alt="">
+                            </div>
+                            <div class="img-block">
+                                <img src="./image/people2.png" alt="">
+                            </div>
+                            <div class="img-block">
+                                <img src="./image/people3.png" alt="">
+                            </div>
+                            <div class="img-block">
+                                <img src="./image/people4.png" alt="">
+                            </div>
+                            <a class="img-block img-block-link">
+                                <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17 34V17M17 0V17M17 17H0M17 17H34" stroke="white"/>
+                                    </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="tast active" id="tast">
+            <div class="container-fluid">
+                <h2 class="section-title task-title">
+                    СМП - это
+                </h2>
+                <div class="row">
+                    <div class="col-xl-4 mb-3">
+                        <div class="task-card task-card-1">
+                            <img src="./image/rhomb.svg" width="50px" height="50px" alt="" class="icon-card">
+                            <h3 class="card-title">Сообщество</h3>
+                            <p class="card-text"> Мы создаем и развиваем деловую среду в Ивановской области. За каждым бизнесом стоят люди. Поэтому Сообщество - это про людей
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 mb-3">
+                        <div class="task-card task-card-2">
+                            <img src="./image/square.svg" width="50px" height="50px" alt="" class="icon-card">
+                            <h3 class="card-title">Молодых</h3>
+                            <p class="card-text"> Молодость - это не про возраст, а про внутреннее состояние. Активная позиция, энергия и желание созидать - если откликается - нам по пути</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 mb-3">
+                        <div class="task-card task-card-3">
+                            <img src="./image/triangle.svg" width="50px" height="50px" alt="" class="icon-card">
+                            <h3 class="card-title">Предпринимателей</h3>
+                            <p class="card-text" > Люди, готовые создавать продукты, брать на себя ответственность и отвечать за результат - основа будущего, в которое мы стремимся</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-center mt-4">Мы создаем лучшую среду для развития в месте,<br> где живем. И делаем это <u><strong>вместе</strong></u></p>
+            </div>
+        </section>
+            <section class="connect grey-con">
+                <div class="container-fluid">
+                <h2 class="section-title task-title">
+                    Наши направления
+                </h2>
+                <p class="section-subtitle text-center">тематические и интерактивные встречи:</p>
+                <div class="line-conent" id="images-slider">
+                    <div class="row">
+                        <div class="col-xl-6 mb-3">
+                            <div class="connect-card">
+                                <div class="line line-mb"></div>
+                                <div class="line-conent-container">
+                                    <p class="connect-card-text" onclick="showPopup('junior')">СМП. Junior</p>
+                                    <div class="image-slider">
+                                        <div class="popup-image-slider">
+                                            <img src="./image/junior.png" alt="СМП. Junior" class="connect-img">
+                                            <img src="./image/knigclub.png" alt="СМП. Junior" class="connect-img" loading="lazy">
+                                            <img src="./image/peregovorpoed.png" alt="СМП. Junior" class="connect-img" loading="lazy">
+                                        </div>
+                                    </div>
+                                    <img src="./image/junior.svg" alt="Logo" class="logo-overlay" loading="lazy">
+                                    <div class="nav-btn-container">
+                                        <button class="nav-btn left-btn">
+                                            <img src="./image/left.svg" alt="Left Arrow">
+                                        </button>
+                                        <button class="nav-btn right-btn">
+                                            <img src="./image/right.svg" alt="Right Arrow">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 mb-3">
+                            <div class="connect-card">
+                                <p class="connect-card-text" onclick="showPopup('promturism')">СМП. Промтуризм</p>
+                                <div class="line-conent-container">
+                                    <div class="image-slider">
+                                        <div class="popup-image-slider">
+                                            <img src="./image/promturism.png" alt="СМП. Промтуризм" class="connect-img" loading="lazy">
+                                            <img src="./image/knigclub.png" alt="СМП. Junior" class="connect-img" loading="lazy">
+                                            <img src="./image/peregovorpoed.png" alt="СМП. Junior" class="connect-img" loading="lazy">
+                                        </div>
+                                    </div>
+                                    <img src="./image/promtur.svg" alt="Logo" class="logo-overlay" loading="lazy">
+                                    <div class="nav-btn-container">
+                                        <button class="nav-btn left-btn">
+                                            <img src="./image/left.svg" alt="Left Arrow">
+                                        </button>
+                                        <button class="nav-btn right-btn">
+                                            <img src="./image/right.svg" alt="Right Arrow">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 mb-3">
+                            <div class="connect-card">
+                                <div class="line-2 line-mb"></div>
+                                <p class="connect-card-text" onclick="showPopup('knigclub')">СМП. Книжный клуб</p>
+                                <div class="line-conent-container position-relative">
+                                    <div class="image-slider">
+                                        <div>
+                                            <img src="./image/knigclub.png" alt="СМП. Книжный клуб" class="connect-img" loading="lazy">
+                                            <img src="./image/knigclub.png" alt="СМП. Junior" class="connect-img" loading="lazy">
+                                            <img src="./image/peregovorpoed.png" alt="СМП. Junior" class="connect-img" loading="lazy">
+                                        </div>
+                                    </div>
+                                    <img src="./image/knigclub.svg" alt="Logo" class="logo-overlay" loading="lazy">
+                                    <div class="nav-btn-container">
+                                        <button class="nav-btn left-btn" onclick="prevImage('knigclub')">
+                                            <img src="./image/left.svg" alt="Left Arrow">
+                                        </button>
+                                        <button class="nav-btn right-btn" onclick="nextImage('knigclub')">
+                                            <img src="./image/right.svg" alt="Right Arrow">
+                                        </button>   
+                                    </div>
+                                    <button class="more-btn" onclick="showPopup('knigclub')">Подробнее <img src="image/arrow_vector.svg"/> </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 mb-3">
+                            <div class="connect-card">
+                                <div class="line line-mb"></div>
+                                <p class="connect-card-text" onclick="showPopup('kinoclub')">СМП. Киноклуб</p>
+                                <div class="line-conent-container position-relative">
+                                    <div class="image-slider">
+                                        <div>
+                                            <img src="./image/kinoclub.png" alt="СМП. Junior" class="connect-img" loading="lazy">
+                                            <img src="./image/knigclub.png" alt="СМП. Junior" class="connect-img" loading="lazy">
+                                            <img src="./image/peregovorpoed.png" alt="СМП. Junior" class="connect-img" loading="lazy">
+                                        </div>
+                                    </div>
+                                    <img src="./image/kinoclub.svg" alt="Logo" class="logo-overlay" loading="lazy">
+                                    <div class="nav-btn-container">
+                                        <button class="nav-btn left-btn">
+                                            <img src="./image/left.svg" alt="Left Arrow">
+                                        </button>
+                                        <button class="nav-btn right-btn">
+                                            <img src="./image/right.svg" alt="Right Arrow">
+                                        </button>
+                                    </div>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 mb-3">
+                            <div class="connect-card">
+                                <div class="line line-mb"></div>
+                                <p class="connect-card-text" onclick="showPopup('delovyeigry')">СМП. Деловые игры</p>
+                                <div class="line-conent-container">
+                                    <div class="image-slider">
+                                        <div>
+                                            <img src="./image/delovyeigry.png" alt="СМП. Junior" class="connect-img" loading="lazy">
+                                            <img src="./image/knigclub.png" alt="СМП. Junior" class="connect-img" loading="lazy">
+                                            <img src="./image/peregovorpoed.png" alt="СМП. Junior" class="connect-img" loading="lazy">
+                                        </div>
+                                    </div>
+                                    <img src="./image/delovigry.svg" alt="Logo" class="logo-overlay" loading="lazy">
+                                    <div class="nav-btn-container">
+                                        <button class="nav-btn left-btn">
+                                            <img src="./image/left.svg" alt="Left Arrow">
+                                        </button>
+                                        <button class="nav-btn right-btn">
+                                            <img src="./image/right.svg" alt="Right Arrow">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 mb-3">
+                            <div class="connect-card">
+                                <div class="line line-mb"></div>
+                                <p class="connect-card-text" onclick="showPopup('peregovorpoed')">СМП. Переговорные поединки</p>
+                                <div class="line-conent-container">
+                                    <div class="image-slider">
+                                        <div>
+                                            <img src="./image/delovyeigry.png" alt="СМП. Junior" class="connect-img" loading="lazy">
+                                            <img src="./image/knigclub.png" alt="СМП. Junior" class="connect-img" loading="lazy">
+                                            <img src="./image/peregovorpoed.png" alt="СМП. Junior" class="connect-img" loading="lazy">
+                                        </div>
+                                    </div>
+                                    <img src="./image/peregovpoedink.svg" alt="Logo" class="logo-overlay" loading="lazy">
+                                    <div class="nav-btn-container">
+                                        <button class="nav-btn left-btn">
+                                            <img src="./image/left.svg" alt="Left Arrow">
+                                        </button>
+                                        <button class="nav-btn right-btn">
+                                            <img src="./image/right.svg" alt="Right Arrow">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Модальные окна -->
+        <div id="popup-overlay" class="popup-overlay">
+            <div id="popup" class="popup">
+                <img src="./image/close.svg" alt="Close" class="popup-close" onclick="hidePopup()">
+                <img src="./image/popuplogoknig.svg" alt="Logo" class="popup-logo" loading="lazy">
+                <h3 id="popup-title">СМП. Книжный клуб</h3>
+                <div class="popup-text-container">
+                    <p id="popup-text">Как мы обычно читаем бизнес книги? Прочитали. Может быть, подумали о том, почему она вам понравилась или нет. Возможно, рассказали партнеру или лучшему другу о прочитанном. А что дальше? Чаще всего, вы просто беретесь за другую книгу…</p>
+                </div>
+                <div class="popup-image-slider">
+                    <img src="./image/knigclub.png" alt="СМП. Книжный клуб" class="popup-img" loading="lazy">
+                    <img src="./image/knigclub.png" alt="СМП. Книжный клуб" class="popup-img" loading="lazy">
+                    <img src="./image/knigclub.png" alt="СМП. Книжный клуб" class="popup-img" loading="lazy">
+                </div>
+                <div class="popup-nav-btn-container">
+                    <button class="popup-nav-btn popup-left-btn" onclick="prevPopupImage()">
+                        <img src="./image/left.svg" alt="Left Arrow">
+                    </button>
+                    <button class="popup-nav-btn popup-right-btn" onclick="nextPopupImage()">
+                        <img src="./image/right.svg" alt="Right Arrow">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <section class="leaders">
+    <div class="container-fluid">
+        <h2 class="section-title">Руководители проекта</h2>
+        <p class="section-subtitle text-center">Сообщество было организовано в 2022 году</p>
+        <div class="row">
+            <div class="col-12">
+                <div class="leader-card">
+                    <div class="row">
+                        <div class="col-md-5 col-12">
+                            <img src="./image/gladyshko.jpg" alt="Руководитель проекта" class="leader-photo" loading="lazy">
+                        </div>
+                        <div class="col-md-7 col-12">
+                            <h3 class="leader-name">Гладышко Артем Владимирович</h3>
+                            <p class="leader-position">Предприниматель</p>
+                            <p class="leader-description">Занимаюсь проектированием, организацией и модерацией деловых мероприятий форумов и конференций</p>
+                            <p class="leader-role">Сооснователь сообщества молодых предпринимателей</p>
+                            <p class="leader-additional"><strong>Академический руководитель</strong></p>
+                            <p class="leader-additional-txt">Магистерской программы «Предпринимательство и управление бизнесом» в ФГБОУ ВО «Ивановский государственный университет»</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="leader-card">
+                    <div class="row">
+                        <div class="col-md-5 col-12">
+                            <img src="./image/geller.jpg" alt="Руководитель проекта" class="leader-photo" loading="lazy">
+                        </div>
+                        <div class="col-md-7 col-12">
+                            <h3 class="leader-name">Геллер Марк Витальевич</h3>
+                            <p class="leader-position">Предприниматель</p>
+                            <p class="leader-description">Директор группы компаний «Константа-Холдинг»</p>
+                            <p class="leader-role">Сооснователь сообщества молодых предпринимателей</p>
+                            <p class="leader-additional"><strong>Заместитель председателя ИРО «ОПОРА РОССИИ»</strong></p>
+                            <p class="leader-additional-txt">Магистерской программы «Предпринимательство и управление бизнесом» в ФГБОУ ВО «Ивановский государственный университет»</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        <section class="team">
+            <div class="container-fluid">
+                <h2 class="section-title">Наша команда</h2>
+                
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="team-card">
+                            <img src="./image/evgen.jpg" alt="Евгений Демянко" class="team-photo" loading="lazy">
+                            <div class="team-info">
+                                <h3 class="team-name">Евгений Демянко</h3>
+                                <p class="team-position">Куратор направления «СМП. Промтуризм».<br>Основатель студии видеомаркетинга «Первый План»</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="team-card">
+                            <img src="./image/ekaterin.jpg" alt="Екатерина Мужжакова" class="team-photo" loading="lazy">
+                            <div class="team-info">
+                                <h3 class="team-name">Екатерина Мужжакова</h3>
+                                <p class="team-position">Сооснователь «СМП Junior», студентка.<br>Оператор мобильной съемки и путешественница</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="team-card">
+                            <img src="./image/vladimir.jpg" alt="Владимир Ярченков" class="team-photo" loading="lazy">
+                            <div class="team-info">
+                                <h3 class="team-name">Владимир Ярченков</h3>
+                                <p class="team-position">Куратор «СМП Junior». Преподаватель ИвГУ. Инвестор.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="team-card">
+                            <img src="./image/viktorya.jpg" alt="Виктория Викторова" class="team-photo" loading="lazy">
+                            <div class="team-info">
+                                <h3 class="team-name">Виктория Викторова</h3>
+                                <p class="team-position">Куратор направления культуры, искусства и области партнерства. Автор бизнес-игры «Коллаборация»</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="team-card">
+                            <img src="./image/vera.jpg" alt="Вера Бубнова" class="team-photo" loading="lazy">
+                            <div class="team-info">
+                                <h3 class="team-name">Вера Бубнова</h3>
+                                <p class="team-position">Куратор направления «Переговорные поединки» в СМП. Предприниматель. Ведёт чат-бота в бизнес.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="team-card">
+                            <img src="./image/maya.jpg" alt="Майя Евдокимова" class="team-photo" loading="lazy">
+                            <div class="team-info">
+                                <h3 class="team-name">Майя Евдокимова</h3>
+                                <p class="team-position">Куратор «СМП Киноклуб»</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="team-card">
+                            <img src="./image/olesya.jpg" alt="Алексеева Олеся" class="team-photo" loading="lazy">
+                            <div class="team-info">
+                                <h3 class="team-name">Алексеева Олеся</h3>
+                                <p class="team-position">Куратор СМП «Книжный клуб». Директор регионального отделения МТС по Ивановской области</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="team-card">
+                            <img src="./image/tatyana.jpg" alt="Татьяна Лепехина" class="team-photo" loading="lazy">
+                            <div class="team-info">
+                                <h3 class="team-name">Татьяна Лепехина</h3>
+                                <p class="team-position">Эксперт деловых коммуникаций. Ведущий бизнес-игр, тренинг по переговорам.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="team-card">
+                            <img src="./image/alexandr.jpg" alt="Александр Носов" class="team-photo" loading="lazy">
+                            <div class="team-info">
+                                <h3 class="team-name">Александр Носов</h3>
+                                <p class="team-position">Ведущий, игротехник, создатель интеллектуально-развлекательных игр и интерактивов.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="team-card">
+                            <img src="./image/maryua.jpg" alt="Мария Соколова" class="team-photo" loading="lazy">
+                            <div class="team-info">
+                                <h3 class="team-name">Мария Соколова</h3>
+                                <p class="team-position">Ведущая трансформационных и финансовых игр. Международная модель, визажист, стилист по волосам.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="join-us" style="background-image: url('./image/join-bg.jpg');">
+            <div class="join-us__container">
+                <div class="join-us__block join-us__block--left">
+                    <h2>Будь с нами!</h2>
+                    <p>Следи за анонсами</p>
+                </div>
+                <div class="join-us__block join-us__block--right">
+                    <a href="https://t.me/smp37" class="join-link">Присоединиться в Telegram</a>
+                    <a href="https://vk.com/ivbizclub" class="join-link">Присоединиться в VK</a>
+                </div>
+            </div>
+        </section>  
+        <section class="partners">
+            <div class="container-fluid">
+                <h2 class="section-title">Наши партнеры</h2>
+                <div class="partners-grid">
+                    <div class="partner-item">
+                        <img src="./image/opora.png" alt="ОПОРА РОССИИ" loading="lazy">
+                    </div>
+                    <div class="partner-item">
+                        <img src="./image/university.png" alt="Университет" loading="lazy">
+                    </div>
+                    <div class="partner-item">
+                        <img src="./image/illuminator.png" alt="Illuminator" loading="lazy">
+                    </div>
+                    <div class="partner-item">
+                        <img src="./image/inter-rao.png" alt="ИНТЕР РАО" loading="lazy">
+                    </div>
+                    <div class="partner-item">
+                        <img src="./image/moy-content.png" alt="МОЙ КОНТЕНТ" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="council">
+            <div class="container-fluid">
+                <h2 class="section-title">Попечительский совет</h2>
+                <div class="council-grid">
+                    <div class="council-item">
+                        <img src="./image/shabarov.jpg" alt="Николай Шабаров" loading="lazy">
+                        <div class="council-info">
+                            <h3>Николай Шабаров</h3>
+                            <p>Руководитель и учредитель управляющей компании «Дельта».</p>
+                        </div>
+                    </div>
+                    <div class="council-item">
+                        <img src="./image/yarmenko.jpg" alt="Владимир Ярменко" loading="lazy">
+                        <div class="council-info">
+                            <h3>Владимир Ярменко</h3>
+                            <p>Предприниматель.</p>
+                        </div>
+                    </div>
+                    <div class="council-item">
+                        <img src="./image/kabanov.jpg" alt="Павел Кабанов" loading="lazy">
+                        <div class="council-info">
+                            <h3>Павел Кабанов</h3>
+                            <p>Предприниматель, фермер, сыродел.</p>
+                        </div>
+                    </div>
+                    <div class="council-item">
+                        <img src="./image/lopukhov.jpg" alt="Денис Лопухов" loading="lazy">
+                        <div class="council-info">
+                            <h3>Денис Лопухов</h3>
+                            <p>Коммерческий директор торговой компании «Мастергласс».</p>
+                        </div>
+                    </div>
+                    <div class="council-item">
+                        <img src="./image/geller1.jpg" alt="Марк Геллер" loading="lazy">
+                        <div class="council-info">
+                            <h3>Марк Геллер</h3>
+                            <p>Директор Группы компаний «Константа-Холдинг».</p>
+                        </div>
+                    </div>
+                    <div class="council-item">
+                        <img src="./image/sverchkov.jpg" alt="Александр Сверчков" loading="lazy">
+                        <div class="council-info">
+                            <h3>Александр Сверчков</h3>
+                            <p>Cобственник завода Schtandart, предприниматель.</p>
+                        </div>
+                    </div>
+                    <div class="council-item">
+                        <img src="./image/smirnov.jpg" alt="Александр Смирнов" loading="lazy">
+                        <div class="council-info">
+                            <h3>Александр Смирнов</h3>
+                            <p>Собственник компании «Ворота37», предприниматель.</p>
+                        </div>
+                    </div>
+                    <div class="council-item">
+                        <img src="./image/kiryushkina.jpg" alt="Наталья Кирюшкина" loading="lazy">
+                        <div class="council-info">
+                            <h3>Наталья Кирюшкина</h3>
+                            <p>Председатель Совета директоров «ГК Альтаир»</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="social-links" style="background-image: url('./image/footer-bg.jpg');">
+            <div class="social-links__container">
+                <div class="social-link-block social-link-block--telegram">
+                    <div class="social-link-content">
+                        <p>Присоединяйтесь к сообществу:</p>
+                        <a href="https://t.me/smp37">https://t.me/smp37</a>
+                    </div>
+                </div>
+                <div class="social-link-block social-link-block--vk">
+                    <div class="social-link-content">
+                        <p>Следи за нами в ВКонтакте:</p>
+                        <a href="https://vk.com/ivbizclub">vk.com/ivbizclub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-credits">
+                <div class="credits-item">2025 © Все права защищены</div>
+                <div class="credits-item"><a href="path/to/privacy-policy.html">Политика конфиденциальности</a></div>
+                <div class="credits-item"><a href="https://illuminator3000.ru/">Создание сайта - Иллюминатор</a></div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
